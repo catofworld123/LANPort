@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "lanport",
+  "version": "1.0",
+  "name": "LANPort",
+  "description": "Set your own LAN port when opening the world to LAN! This means that with port forwarding you can have friends joining your world without the need of BTW server setup!",
+  "authors": [
+    "cat_of_world"
+  ],
+  "contact": {
+    "homepage": "soon",
+    "sources": "soon"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/lanport/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fabricmc.example.LanPortMod"
+    ],
+    "btw:addon": [
+      "btw.community.example.LanPortAddon"
+    ]
+  },
+  "custom": {
+    "btw:addon_prefix": "EX"
+  },
+  "mixins": [
+    "lanport.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "minecraft": "1.6.4"
+  }
+}
